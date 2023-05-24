@@ -12,7 +12,7 @@ from sklearn.metrics import pairwise_distances
 from sklearn.preprocessing import normalize
 from sklearn.neighbors import KDTree
 
-from sklearn.externals import joblib
+import joblib
 
 import numpy as np
 import cupy as cp
