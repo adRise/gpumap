@@ -34,7 +34,7 @@ configuration = {
                          'scikit-learn >= 0.16',
                          'scipy >= 0.19',
                          'numba >= 0.37',
-                         'faiss >= 1.5.3'],
+                         'faiss-gpu >= 1.5.3'],
     'ext_modules' : [],
     'cmdclass' : {},
     'test_suite' : 'nose.collector',
