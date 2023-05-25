@@ -141,7 +141,7 @@ def smooth_knn_dist_cuda(
         else:
             # FIXME related to cupy bug https://github.com/cupy/cupy/issues/2205
             #mean = distances_mean[0]
-            mean = distances_mean
+            mean = distances_mean[()] #solve can't index issue of distances_mean
         result[i] = max(result_i, min_k_dist_scale * mean)
 
 
